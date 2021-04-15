@@ -1,4 +1,4 @@
-import Typography from "@material-ui/core/Typography";
+import { Typography } from "antd";
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import TodoForm from "./components/TodoForm";
@@ -45,10 +45,10 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Typography style={{ padding: 16 }} variant="h1">
+    <div className={"App"}>
+      <Typography.Title level={1} style={{ padding: 16 }}>
         React Medflix
-      </Typography>
+      </Typography.Title>
       <TodoForm addTodo={addTodo} />
       <TodoList
         todos={todos}
