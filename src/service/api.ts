@@ -5,8 +5,8 @@ const fetchTodos = async () => {
 
   return await axios
     .get(url)
-    .then((res) => {
-      const result = res.data;
+    .then((response) => {
+      const result = response.data;
       if (result && result.length !== 0) {
         return result.slice(0, 10);
       }
