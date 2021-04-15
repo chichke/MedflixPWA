@@ -1,4 +1,4 @@
-const axios = require("axios");
+import axios from 'axios';
 
 const fetchTodos = async () => {
   const url = "https://jsonplaceholder.typicode.com/todos";
